@@ -1,0 +1,123 @@
+:root{
+  --cardColour:#120052;
+  --gridientColor1:rgba(181,55,242, 0.75);
+  --gridientColor2:rgba(60,185,252, 0.75);
+  --textColor:#fff;
+  --buttonBackgroundColor:#fff;
+  --activeBackground:rgb(138,43,226);
+};
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 600px;
+}
+
+.container{
+  background-color: white;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  transform-style:preserve-3d; 
+  min-height: 85vh;
+  width: 35rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  background-color:var(--cardColour);
+  color: var(--textColor);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2); 
+
+}
+
+.sneakers{
+  min-height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sneakers img{
+  width: 10rem;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+
+.circle{
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(
+    to right,
+    var(--gridientColor1),
+    var(--gridientColor2)      
+    );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+.info h1{
+  font-size: 3rem;
+}
+
+.info h3{
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: var(--textColor);
+  font-weight: lighter;
+}
+
+.sizes{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.sizes button{
+  padding: 0.5rem 2rem;
+  background: var(--buttonBackgroundColor);
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+
+button.active{
+  background:var(--activeBackground);
+  color: white;
+}
+
+.purchase{
+  margin-top: 5rem; 
+}
+
+.purchase button{
+  width: 100%;
+  padding: 1rem 0rem;
+  background: linear-gradient(
+    to right,
+    var(--gridientColor1),
+    var(--gridientColor2)    
+
+    );
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}

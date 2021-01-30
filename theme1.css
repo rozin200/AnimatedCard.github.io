@@ -1,0 +1,8 @@
+:root{
+  --cardColour:#027A9F;
+  --gridientColor1:rgba(255,170,1, 0.75);
+  --gridientColor2:rgba(225,239,126, 0.75);
+  --textColor:#000;
+  --buttonBackgroundColor:#fff;
+  --activeBackground:rgb(18,178,150);
+};
